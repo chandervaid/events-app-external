@@ -30,7 +30,7 @@ jobs:
 
   build_docker_image:
     name: build docker image for image repository
-    needs: [build]
+    needs: [build_and_test]
     runs-on: ubuntu-latest
 
     steps:
